@@ -1,46 +1,48 @@
 # releve-cli — Atelier Logiciel Nantais
 
-[Une à deux phrases : ce que fait releve-cli, à qui il s'adresse, dans quel
-contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
+Ce projet permet de parametrer un serveur local de Cloud personnel.
+Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
 
 ## Installation et démarrage
 
-Prérequis : 
-- Tour centrale de PC
-- Hard Disk Drive sup.
-- Connexion Internet
+Prérequis : [matériel, compte ou programme à avoir avant de commencer].
 
-1. Première étape
+1. [Première étape.]
 
-    Réparations si nécessaire (changement de pièces)
+   ```
+   [commande à copier, une par ligne]
+   ```
 
-2. Deuxième étape
+2. [Deuxième étape.]
+3. [Troisième étape.]
 
-    Ajout disque dur supplémentaire
-
-3. Troisième étape
-
-    Connexion internet et mise en route/installation serveur sur la tour 
-
-Résultat attendu : 
-
-    - Accès aux fichiers à distance depuis n'importe quel appareil
+Résultat attendu : [ce que le lecteur doit constater à la fin].
 
 ## Usage
+ 
+### Herbegement à usage personnel
 
-### [Premier usage courant]
+Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
+Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
+peut y déposer et récupérer des fichiers.
 
-[Exemple concret, avec la commande ou le geste correspondant.]
+### Consommation des fichiers
 
-### [Deuxième usage courant]
-
-[Exemple concret.]
+Utilisation du serveur pour récupérer des fichiers stockés par soi à partir de 
+n'importe quel appareil en reseau local ou externe.
 
 ## Architecture
 
-[Deux à trois phrases : les grands blocs du système et comment ils
-communiquent. Cette section renvoie vers le schéma détaillé, produit en
-séance 3 — elle ne le duplique pas.]
+Le système repose sur un serveur distant, qui sert de point d'entrée unique pour 
+stocker les fichiers et les rendre récupérables à distance. Les opérations de 
+dépôt et de consultation sont orchestrées par un petit ensemble de composants : 
+l'accès distant, l'espace de stockage, et les commandes de gestion des fichiers, 
+qui assurent le flux entre le poste source et le serveur.
+
+Dans le cas d’un usage personnel, l’utilisateur envoie ses fichiers vers le serveur 
+depuis son environnement local ; dans le cas de la consommation, il récupère ensuite 
+ces fichiers depuis n’importe quel appareil connecté au réseau. Le schéma détaillé 
+de ces échanges est présenté dans `docs/architecture.md`.
 
 Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
 
@@ -62,9 +64,8 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 - Toute modification passe par une demande de fusion relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
 
-## Contact
 
-Selfispace - © - ADAM Jérémie | POYET Maxime | AUNE Amaury | LEMOINE Benjmain
+## Contact
 
     - Pour toute question, ouvrez une issue sur ce dépôt - 
  

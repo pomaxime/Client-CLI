@@ -1,4 +1,4 @@
-# releve-cli — Atelier Logiciel Nantais
+# Service Cloud-Serveur nantais
 
 Ce projet permet de parametrer un serveur local de Cloud personnel.
 Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
@@ -19,30 +19,20 @@ Prérequis : [matériel, compte ou programme à avoir avant de commencer].
 Résultat attendu : [ce que le lecteur doit constater à la fin].
 
 ## Usage
- 
-### Herbegement à usage personnel
 
-Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
-Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
-peut y déposer et récupérer des fichiers.
+### [Premier usage courant]
 
-### Consommation des fichiers
+[Exemple concret, avec la commande ou le geste correspondant.]
 
-Utilisation du serveur pour récupérer des fichiers stockés par soi à partir de 
-n'importe quel appareil en reseau local ou externe.
+### [Deuxième usage courant]
+
+[Exemple concret.]
 
 ## Architecture
 
-Le système repose sur un serveur distant, qui sert de point d'entrée unique pour 
-stocker les fichiers et les rendre récupérables à distance. Les opérations de 
-dépôt et de consultation sont orchestrées par un petit ensemble de composants : 
-l'accès distant, l'espace de stockage, et les commandes de gestion des fichiers, 
-qui assurent le flux entre le poste source et le serveur.
-
-Dans le cas d’un usage personnel, l’utilisateur envoie ses fichiers vers le serveur 
-depuis son environnement local ; dans le cas de la consommation, il récupère ensuite 
-ces fichiers depuis n’importe quel appareil connecté au réseau. Le schéma détaillé 
-de ces échanges est présenté dans `docs/architecture.md`.
+[Deux à trois phrases : les grands blocs du système et comment ils
+communiquent. Cette section renvoie vers le schéma détaillé, produit en
+séance 3 — elle ne le duplique pas.]
 
 Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
 
@@ -59,9 +49,9 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 
 ## Contribution
 
-- Une branche par sujet, nommée `docs/…`, `feat/…` ou `fix/…`.
-- Un message d'enregistrement préfixé par `feat`, `fix`, `docs` ou `chore`.
-- Toute modification passe par une demande de fusion relue par un autre membre.
+- Une branche par sujet, nommée `Docs`, `Feat` ou `Fix`.
+- Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`.
+- Toute modification passe par une demande de fusion (au format PR) relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
 
 

@@ -1,4 +1,4 @@
-# releve-cli — Atelier Logiciel Nantais
+# Service Cloud-Serveur nantais
 
 [Une à deux phrases : ce que fait releve-cli, à qui il s'adresse, dans quel
 contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
@@ -57,9 +57,9 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 
 ## Contribution
 
-- Une branche par sujet, nommée `docs/…`, `feat/…` ou `fix/…`.
-- Un message d'enregistrement préfixé par `feat`, `fix`, `docs` ou `chore`.
-- Toute modification passe par une demande de fusion relue par un autre membre.
+- Une branche par sujet, nommée `Docs`, `Feat` ou `Fix`.
+- Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`.
+- Toute modification passe par une demande de fusion (au format PR) relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
 
 ## Contact

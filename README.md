@@ -64,7 +64,4 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 
 ## Contact
 
-Selfispace - © - ADAM Jérémie | POYET Maxime | AUNE Amaury | LEMOINE Benjmain
-
-    - Pour toute question, ouvrez une issue sur ce dépôt - 
- 
+Selfispace - © - ADAM Jérémie | POYET Maxime | AUNE Amaury | LEMOINE Benjamin

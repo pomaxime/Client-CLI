@@ -54,6 +54,7 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 | `src/db`               | Dossier referent au login ainsi que la sauvegarde d'un apparareil pour une connexion simple|
 | `src/db/user_auth`     | Dossier specifique au login.                                                               |
 | `src/db/diff_connexion`| Dossier specifique a differentes connexion pour le meme utilisateur.                       |
+| `src/shell`            | Dossier regroupant la partie visuel dans le shell avec certaines commande.                 |
 
 ## Contribution
 

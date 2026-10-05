@@ -64,6 +64,15 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 | `docs/architecture.md` | Schéma d'architecture détaillé (à venir, séance 3).                                        |
 | `CHANGELOG.md`         | Journal des versions du projet (chapitre 3 : retirez cette ligne si vous ne le créez pas). |
 | `config.example.txt`   | Modèle de configuration, sans valeur réelle.                                               |
+| `src`                  | Sources qui retrace tout le code en lui meme.                                              |
+| `src/tests`            | Tous les tests unitaires mais egalement curl nesessaire.                                   |
+| `.gitignore`           | Fichier permettant d'exclure les donnees importantes du repo github.                       |
+| `src/memory`           | Dossier referent de la memoire que l'on as sur notre pc. Et qui puisse etre atribue.       |
+| `src/port`             | Dossier referent le port attribuable en fonction de la memoire donnee.                     |
+| `src/db`               | Dossier referent au login ainsi que la sauvegarde d'un apparareil pour une connexion simple|
+| `src/db/user_auth`     | Dossier specifique au login.                                                               |
+| `src/db/diff_connexion`| Dossier specifique a differentes connexion pour le meme utilisateur.                       |
+| `src/shell`            | Dossier regroupant la partie visuel dans le shell avec certaines commande.                                               |
 
 ## Contribution
 

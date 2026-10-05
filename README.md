@@ -1,7 +1,7 @@
 # Service Cloud-Serveur nantais
 
-[Une à deux phrases : ce que fait releve-cli, à qui il s'adresse, dans quel
-contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
+Ce projet permet de parametrer un serveur local de Cloud personnel.
+Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
 
 ## Installation et démarrage
 

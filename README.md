@@ -5,18 +5,26 @@ contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
 
 ## Installation et démarrage
 
-Prérequis : [matériel, compte ou programme à avoir avant de commencer].
+Prérequis : 
+- Tour centrale de PC
+- Hard Disk Drive sup.
+- Connexion Internet
 
-1. [Première étape.]
+1. Première étape
 
-   ```
-   [commande à copier, une par ligne]
-   ```
+    Réparations si nécessaire (changement de pièces)
 
-2. [Deuxième étape.]
-3. [Troisième étape.]
+2. Deuxième étape
 
-Résultat attendu : [ce que le lecteur doit constater à la fin].
+    Ajout disque dur supplémentaire
+
+3. Troisième étape
+
+    Connexion internet et mise en route/installation serveur sur la tour 
+
+Résultat attendu : 
+
+    - Accès aux fichiers à distance depuis n'importe quel appareil
 
 ## Usage
 
@@ -66,4 +74,6 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 
 ## Contact
 
-[Nom du binôme] — pour toute question, ouvrez une issue sur ce dépôt.
+Selfispace - © - ADAM Jérémie | POYET Maxime | AUNE Amaury | LEMOINE Benjmain
+
+    - Pour toute question, ouvrez une issue sur ce dépôt - 

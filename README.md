@@ -19,7 +19,7 @@ Prérequis : [matériel, compte ou programme à avoir avant de commencer].
 Résultat attendu : [ce que le lecteur doit constater à la fin].
 
 ## Usage
-
+ 
 ### Herbegement à usage personnel
 
 Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 

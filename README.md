@@ -28,19 +28,29 @@ Résultat attendu :
 
 ## Usage
 
-### [Premier usage courant]
+### Herbegement à usage personnel
 
-[Exemple concret, avec la commande ou le geste correspondant.]
+Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
+Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
+peut y déposer et récupérer des fichiers.
 
-### [Deuxième usage courant]
+### Consommation des fichiers
 
-[Exemple concret.]
+Utilisation du serveur pour récupérer des fichiers stockés par soi à partir de 
+n'importe quel appareil en reseau local ou externe.
 
 ## Architecture
 
-[Deux à trois phrases : les grands blocs du système et comment ils
-communiquent. Cette section renvoie vers le schéma détaillé, produit en
-séance 3 — elle ne le duplique pas.]
+Le système repose sur un serveur distant, qui sert de point d'entrée unique pour 
+stocker les fichiers et les rendre récupérables à distance. Les opérations de 
+dépôt et de consultation sont orchestrées par un petit ensemble de composants : 
+l'accès distant, l'espace de stockage, et les commandes de gestion des fichiers, 
+qui assurent le flux entre le poste source et le serveur.
+
+Dans le cas d’un usage personnel, l’utilisateur envoie ses fichiers vers le serveur 
+depuis son environnement local ; dans le cas de la consommation, il récupère ensuite 
+ces fichiers depuis n’importe quel appareil connecté au réseau. Le schéma détaillé 
+de ces échanges est présenté dans `docs/architecture.md`.
 
 Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
 

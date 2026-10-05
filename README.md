@@ -20,13 +20,16 @@ Résultat attendu : [ce que le lecteur doit constater à la fin].
 
 ## Usage
 
-### [Premier usage courant]
+### Herbegement à usage personnel
 
-[Exemple concret, avec la commande ou le geste correspondant.]
+Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
+Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
+peut y déposer et récupérer des fichiers.
 
-### [Deuxième usage courant]
+### Consommation des fichiers
 
-[Exemple concret.]
+Utilisation du serveur pour récupérer des fichiers stockés par soi à partir de 
+n'importe quel appareil en reseau local ou externe.
 
 ## Architecture
 

@@ -1,6 +1,6 @@
 # Service Cloud-Serveur nantais
 
-Ce projet permet de parametrer un serveur local de Cloud personnel. 
+Ce projet permet de parametrer un serveur local de Cloud personnel.
 Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
 
 ## Installation et démarrage
@@ -53,6 +53,7 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 - Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`.
 - Toute modification passe par une demande de fusion (au format PR) relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
+
 
 ## Contact
 

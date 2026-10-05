@@ -1,7 +1,7 @@
 # releve-cli — Atelier Logiciel Nantais
 
-[Une à deux phrases : ce que fait releve-cli, à qui il s'adresse, dans quel
-contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
+Ce projet permet de parametrer un serveur local de Cloud personnel.
+Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
 
 ## Installation et démarrage
 
@@ -63,6 +63,7 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 - Un message d'enregistrement préfixé par `feat`, `fix`, `docs` ou `chore`.
 - Toute modification passe par une demande de fusion relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
+
 
 ## Contact
 

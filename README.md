@@ -1,38 +1,56 @@
-# releve-cli — Atelier Logiciel Nantais
+# Service Cloud-Serveur nantais
 
 [Une à deux phrases : ce que fait releve-cli, à qui il s'adresse, dans quel
 contexte l'atelier l'utilise. Remplacez ce paragraphe, crochets compris.]
 
 ## Installation et démarrage
 
-Prérequis : [matériel, compte ou programme à avoir avant de commencer].
+Prérequis : 
+- Tour centrale de PC
+- Hard Disk Drive sup.
+- Connexion Internet
 
-1. [Première étape.]
+1. Première étape
 
-   ```
-   [commande à copier, une par ligne]
-   ```
+    Réparations si nécessaire (changement de pièces)
 
-2. [Deuxième étape.]
-3. [Troisième étape.]
+2. Deuxième étape
 
-Résultat attendu : [ce que le lecteur doit constater à la fin].
+    Ajout disque dur supplémentaire
+
+3. Troisième étape
+
+    Connexion internet et mise en route/installation serveur sur la tour 
+
+Résultat attendu : 
+
+    - Accès aux fichiers à distance depuis n'importe quel appareil
 
 ## Usage
 
-### [Premier usage courant]
+### Herbegement à usage personnel
 
-[Exemple concret, avec la commande ou le geste correspondant.]
+Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
+Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
+peut y déposer et récupérer des fichiers.
 
-### [Deuxième usage courant]
+### Consommation des fichiers
 
-[Exemple concret.]
+Utilisation du serveur pour récupérer des fichiers stockés par soi à partir de 
+n'importe quel appareil en reseau local ou externe.
 
 ## Architecture
 
-[Deux à trois phrases : les grands blocs du système et comment ils
-communiquent. Cette section renvoie vers le schéma détaillé, produit en
-séance 3 — elle ne le duplique pas.]
+Le système repose sur un serveur distant, qui sert de point d'entrée unique pour 
+stocker les fichiers et les rendre récupérables à distance. Les opérations de 
+dépôt et de consultation sont orchestrées par un petit ensemble de composants : 
+l'accès distant, l'espace de stockage, et les commandes de gestion des fichiers, 
+qui assurent le flux entre le poste source et le serveur.
+
+Dans le cas d’un usage personnel, l’utilisateur envoie ses fichiers vers le serveur 
+depuis son environnement local ; dans le cas de la consommation, il récupère ensuite 
+ces fichiers depuis n’importe quel appareil connecté au réseau. Le schéma détaillé 
+de ces échanges est présenté dans `docs/architecture.md`.
 
 Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
 
@@ -46,14 +64,23 @@ Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore pr
 | `docs/architecture.md` | Schéma d'architecture détaillé (à venir, séance 3).                                        |
 | `CHANGELOG.md`         | Journal des versions du projet (chapitre 3 : retirez cette ligne si vous ne le créez pas). |
 | `config.example.txt`   | Modèle de configuration, sans valeur réelle.                                               |
+| `src`                  | Sources qui retrace tout le code en lui meme.                                              |
+| `src/tests`            | Tous les tests unitaires mais egalement curl nesessaire.                                   |
+| `.gitignore`           | Fichier permettant d'exclure les donnees importantes du repo github.                       |
+| `src/memory`           | Dossier referent de la memoire que l'on as sur notre pc. Et qui puisse etre atribue.       |
+| `src/port`             | Dossier referent le port attribuable en fonction de la memoire donnee.                     |
+| `src/db`               | Dossier referent au login ainsi que la sauvegarde d'un apparareil pour une connexion simple|
+| `src/db/user_auth`     | Dossier specifique au login.                                                               |
+| `src/db/diff_connexion`| Dossier specifique a differentes connexion pour le meme utilisateur.                       |
+| `src/shell`            | Dossier regroupant la partie visuel dans le shell avec certaines commande.                                               |
 
 ## Contribution
 
-- Une branche par sujet, nommée `docs/…`, `feat/…` ou `fix/…`.
-- Un message d'enregistrement préfixé par `feat`, `fix`, `docs` ou `chore`.
-- Toute modification passe par une demande de fusion relue par un autre membre.
+- Une branche par sujet, nommée `Docs`, `Feat` ou `Fix`.
+- Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`.
+- Toute modification passe par une demande de fusion (au format PR) relue par un autre membre.
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
 
 ## Contact
 
-[Nom du binôme] — pour toute question, ouvrez une issue sur ce dépôt.
+Selfispace - © - ADAM Jérémie | POYET Maxime | AUNE Amaury | LEMOINE Benjamin

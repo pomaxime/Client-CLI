@@ -11,7 +11,7 @@ jamais le nom de la colonne « Rédaction ».
 | Fichier | Sujet traité | Rédaction | Relecture | État |
 |---|---|---|---|---|
 | `docs/architecture.md` | Vue d'ensemble : blocs, flux, légende, périmètre | LEMOINE Benjamin | POYET Maxime | à faire |
-| `docs/adr/0001-format-du-rapport.md` | Décision : format du rapport de synthèse | ADAM Jérémie | LEMOINE Benjamin | à faire |
+| `docs/adr/0001-format-du-rapport.md` | Décision : format du rapport de synthèse | AUNE Amaury | LEMOINE Benjamin | à faire |
 | `docs/fiche-lecture.md` | Grille de lecture appliquée au README du dépôt-modèle | POYET Maxime | LEMOINE Benjamin | à faire |
 | `docs/tableau-repartition.md` | Ce tableau lui-même | ADAM Jérémie | Toute l'équipe | OK  |
 | `README.md` | Index : renvois vers les fichiers ci-dessus | Toute l'équipe | Toute l'équipe | à faire |

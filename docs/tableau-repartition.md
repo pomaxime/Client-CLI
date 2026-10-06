@@ -14,6 +14,7 @@ jamais le nom de la colonne « Rédaction ».
 | `docs/adr/0001-format-du-rapport.md` | Décision : format du rapport de synthèse | AUNE Amaury | LEMOINE Benjamin | à faire |
 | `docs/fiche-lecture.md` | Grille de lecture appliquée au README du dépôt-modèle | POYET Maxime | LEMOINE Benjamin | à faire |
 | `docs/tableau-repartition.md` | Ce tableau lui-même | ADAM Jérémie | Toute l'équipe | OK  |
+| `docs/` | Issues | AUNE Amaury | Membre assigné | OK  |
 | `README.md` | Index : renvois vers les fichiers ci-dessus | Toute l'équipe | Toute l'équipe | à faire |
 
 > Si l'équipe compte trois personnes, une personne peut porter deux fichiers.

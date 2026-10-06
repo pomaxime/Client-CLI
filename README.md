@@ -3,6 +3,10 @@
 Ce projet permet de parametrer un serveur local de Cloud personnel.
 Si vous possedez un vieux PC tournez le des maintenant en interface de gestion de votre cloud personnel.
 
+## Objectif
+
+À la fin de la lecture de cette documentation, le lecteur doit pouvoir comprendre le rôle du serveur Cloud-Serveur nantais, préparer le matériel nécessaire, suivre les étapes de mise en place et accéder aux fichiers stockés à distance.
+
 ## Installation et démarrage
 
 Prérequis : 

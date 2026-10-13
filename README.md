@@ -26,13 +26,15 @@ Prérequis :
 
     Connexion internet et mise en route/installation serveur sur la tour 
 
-Résultat attendu : 
+Résultat attendu :
 
-    - Accès aux fichiers à distance depuis n'importe quel appareil
+- Accès aux fichiers à distance depuis n'importe quel appareil
+
+Le lancement de l'outil est détaillé dans `docs/demarrage.md`.
 
 ## Usage
 
-### Herbegement à usage personnel
+### Hébergement à usage personnel
 
 Stockage de fichiers sur un serveur distant, accessible à distance via SSH. 
 Le serveur est configuré pour permettre l'accès à un utilisateur unique, qui 
@@ -53,36 +55,34 @@ qui assurent le flux entre le poste source et le serveur.
 
 Dans le cas d’un usage personnel, l’utilisateur envoie ses fichiers vers le serveur 
 depuis son environnement local ; dans le cas de la consommation, il récupère ensuite 
-ces fichiers depuis n’importe quel appareil connecté au réseau. Le schéma détaillé 
-de ces échanges est présenté dans `docs/architecture.md`.
+ces fichiers depuis n’importe quel appareil connecté au réseau.
 
-Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
+Le schéma de ces échanges n'est pas encore produit. Le fichier `docs/architecture.md`
+et la fiche de décision `docs/adr/0001-format-du-rapport.md` portent sur `releve-cli`,
+l'outil de l'Atelier Logiciel Nantais étudié comme fil rouge du module, et non sur
+le Cloud-Serveur.
 
 ## Organisation du dépôt
 
-| Chemin                 | Contenu                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------------ |
-| `README.md`            | Cette page : présentation, installation, usage, architecture.                              |
-| `docs/reglages.md`     | Référence des réglages disponibles.                                                        |
-| `docs/demarrage.md`    | Guide détaillé de démarrage.                                                               |
-| `docs/architecture.md` | Schéma d'architecture détaillé (à venir, séance 3).                                        |
-| `CHANGELOG.md`         | Journal des versions du projet (chapitre 3 : retirez cette ligne si vous ne le créez pas). |
-| `config.example.txt`   | Modèle de configuration, sans valeur réelle.                                               |
-| `src`                  | Sources qui retrace tout le code en lui meme.                                              |
-| `src/tests`            | Tous les tests unitaires mais egalement curl nesessaire.                                   |
-| `.gitignore`           | Fichier permettant d'exclure les donnees importantes du repo github.                       |
-| `src/memory`           | Dossier referent de la memoire que l'on as sur notre pc. Et qui puisse etre atribue.       |
-| `src/port`             | Dossier referent le port attribuable en fonction de la memoire donnee.                     |
-| `src/db`               | Dossier referent au login ainsi que la sauvegarde d'un apparareil pour une connexion simple|
-| `src/db/user_auth`     | Dossier specifique au login.                                                               |
-| `src/db/diff_connexion`| Dossier specifique a differentes connexion pour le meme utilisateur.                       |
-| `src/shell`            | Dossier regroupant la partie visuel dans le shell avec certaines commande.                                               |
+| Chemin | Contenu |
+| --- | --- |
+| `README.md` | Cette page : présentation, installation, usage, architecture. |
+| `docs/demarrage.md` | Guide détaillé de démarrage. |
+| `docs/reglages.md` | Référence des réglages disponibles. |
+| `docs/architecture.md` | Schéma d'architecture de `releve-cli` (fil rouge du module). |
+| `docs/adr/` | Fiches de décision technique (ADR), une par décision. |
+| `docs/fiche-lecture.md` | Fiche de lecture critique du README du dépôt-modèle. |
+| `docs/tableau-repartition.md` | Répartition du travail : qui rédige, qui relit chaque fichier. |
+| `docs/journal-revue.md` | Journal de traitement des retours reçus en revue croisée. |
+| `.gitignore` | Fichiers exclus du dépôt, dont la configuration réelle `config.txt`. |
+
+Le code source (`src/`) n'est pas encore présent dans le dépôt.
 
 ## Contribution
 
-- Une branche par sujet, nommée `Docs`, `Feat` ou `Fix`.
-- Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`.
-- Toute modification passe par une demande de fusion (au format PR) relue par un autre membre.
+- Une branche par sujet, préfixée `doc/`, `feat/` ou `fix/` (exemple : `doc/architecture`).
+- Un message d'enregistrement préfixé par `[ADD]`, `[FIX]`, `[DOCS]` ou `[CHORE]`, suivi de ce que fait le changement.
+- Toute modification passe par une demande de fusion (au format PR) vers `main`, relue par un autre membre et étiquetée (label `documentation`, `bug`, `enhancement`…).
 - Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
 
 ## Contact

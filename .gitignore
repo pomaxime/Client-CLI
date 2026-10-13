@@ -1,0 +1,7 @@
+# Configuration réelle : contient des valeurs d'authentification, jamais versionnée
+config.txt
+.env
+
+# Fichiers générés par Python
+__pycache__/
+*.pyc

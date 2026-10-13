@@ -1,7 +1,7 @@
 # 0001 — Produire le rapport en texte tabulaire pour la lecture et en JSON pour le dépôt distant
 
 Statut : accepté — 13 octobre 2026
-Rédaction : AUNE Amaury — Relecture : LEMOINE Benjamin
+Rédaction : LEMOINE Benjamin — Relecture : AUNE Amaury
 
 ## Contexte
 

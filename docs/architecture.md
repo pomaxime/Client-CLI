@@ -1,6 +1,6 @@
 # Architecture de releve-cli
 
-> Dernière révision : 6 octobre 2026
+> Dernière révision : 13 octobre 2026 — Statut : version finale du module
 > Rédaction : LEMOINE Benjamin — Relecture : POYET Maxime
 
 ## Ce que ce document décrit
@@ -16,10 +16,6 @@ Seul le flux qui y mène est représenté. La production du fichier de relevés 
 couverte non plus : le schéma part du fichier déjà présent sur le poste.
 
 ## Vue d'ensemble
-
-Deux écritures sont acceptées. Gardez celle que vous préférez, supprimez l'autre.
-
-### Écriture 1 — schéma en caractères
 
 ```
 +----------------------+
@@ -54,20 +50,14 @@ Légende : [ ] élément du projet
           ( ) élément hors périmètre
 ```
 
-### Écriture 2 — bloc Mermaid
-
-```mermaid
-flowchart LR
-  CSV[Fichier de relevés CSV] -- lecture ligne à ligne --> CLI[releve-cli]
-  CLI -- rapport texte --> OUT[rapports/]
-  CLI -- HTTPS / JSON --> API[Service de dépôt]
-```
+Le choix des deux formats de sortie (texte et JSON) est justifié dans
+`docs/adr/0001-format-du-rapport.md`.
 
 ## Tableau des éléments
 
 | Élément | Rôle | Remplaçable par | Contrainte connue |
 |---|---|---|---|
-| Fichier de relevés (CSV) | ADAM Jérémie | AUNE Amaury | Une mesure par ligne, séparateur virgule |
-| releve-cli | POYET Maxime | LEMOINE Benjamin | Lit tout le fichier en mémoire |
-| Dossier rapports/ | AUNE Amaury | ADAM Jérémie | releve-cli |
-| Service de dépôt | LEMOINE Benjamin | un membre de l'équipe | Hors périmètre de l'atelier |
+| Fichier de relevés (CSV) | Donnée d'entrée : une mesure horodatée par ligne | Tout fichier CSV au même format | Une mesure par ligne, séparateur virgule |
+| releve-cli | Lit le fichier, calcule la synthèse, écrit le rapport texte et envoie le JSON | Aucun : c'est le cœur du projet | Lit tout le fichier en mémoire |
+| Dossier rapports/ | Conserve les rapports texte produits | Tout dossier accessible en écriture | Seul releve-cli y écrit |
+| Service de dépôt | Reçoit les rapports au format JSON | Aucun : imposé et hébergé hors de l'atelier | Hors périmètre de l'atelier |

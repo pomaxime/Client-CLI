@@ -16,7 +16,7 @@ jamais le nom de la colonne « Rédaction ».
 | `docs/demarrage.md` | Guide de démarrage : prérequis, étapes, résultat attendu | AUNE Amaury | ADAM Jérémie | fait |
 | `docs/reglages.md` | Référence des réglages | POYET Maxime | AUNE Amaury | fait |
 | `docs/architecture.md` | Vue d'ensemble : blocs, flux, légende, périmètre | LEMOINE Benjamin | POYET Maxime | fait |
-| `docs/adr/0001-format-du-rapport.md` | Décision : format du rapport de synthèse | AUNE Amaury | LEMOINE Benjamin | fait |
+| `docs/adr/0001-format-du-rapport.md` | Décision : format du rapport de synthèse | LEMOINE Benjamin | AUNE Amaury | fait |
 | `docs/fiche-lecture.md` | Grille de lecture appliquée au README du dépôt-modèle | POYET Maxime | LEMOINE Benjamin | fait |
 | `docs/journal-revue.md` | Traitement des retours de la revue croisée | LEMOINE Benjamin | POYET Maxime | fait |
 | `docs/tableau-repartition.md` | Ce tableau lui-même | ADAM Jérémie | Toute l'équipe | fait |
